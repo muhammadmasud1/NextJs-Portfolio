@@ -57,7 +57,7 @@ const handleCopyEmail = async () => {
   if ("clipboard" in navigator) {
     try {
       await navigator.clipboard.writeText(email);
-     
+      alert("Successful Copy")
     } catch (err) {
       console.error("Failed to copy: ", err);
       alert("Failed to copy, please try again!");
