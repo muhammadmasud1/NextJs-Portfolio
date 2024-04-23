@@ -9,25 +9,24 @@ import { CiLocationArrow1, CiTwitter, CiInstagram } from "react-icons/ci";
 
 const links = [
   {
-    img: "/img/pizza.png",
-    title: "Rectangle",
-    subtitle: ["Product design, Icon design"],
+    img: "https://i.ibb.co/Ld6w3LQ/icons8-e-commerce-96.png",
+    title: "E-Commerce Functionality Website",
+    subtitle: ["Product design, Feature of functionality"],
     icon: <BsChevronRight />,
+    href: "/rectangle",
   },
   {
-    img: "/img/wink.png",
-    title: "Morva labs",
-    subtitle: ["Visual design, Branding"],
+    img: "https://i.ibb.co/2dgSsg7/icons8-budget-96.png",
+    title: "Web Marketing Agency",
+    subtitle: ["Run Time Communication, ChatBox"],
+    href: "/morvalabs",
   },
   {
-    img: "/img/foot.png",
-    title: "Simply",
+    img: "https://i.ibb.co/hVK9hHq/icons8-paid-96.png",
+    title: "Landing Business Website",
     subtitle: ["Landing  page, illustration design"],
-  },
-  {
-    img: "/img/img4.png",
-    title: "Glassdoor",
-    subtitle: ["Icons design, illustration design"],
+    // u can redirect to other sites here
+    href: "/simply",
   },
 ];
 
@@ -233,12 +232,12 @@ function page() {
           <div className="bg-[#F6F8FA] dark:bg-[#2C2C2C] p-6  mt-4 rounded-md">
             <div className="text-center">
               <span className="text-neutral-700 dark:text-neutral-400">
-                © 2023 Joscript Folio – Jo free Templates
+                © 2024 Muhammad Masud || All Rights Reserved.
               </span>
               <p className="text-neutral-500">
                 By{" "}
                 <span className="hover:underline  hover:text-neutral-400 text-neutral-700 dark:text-neutral-300">
-                  Joscript
+                  MasudCodeCreations
                 </span>
               </p>
             </div>

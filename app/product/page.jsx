@@ -9,46 +9,28 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { CiLocationArrow1, CiTwitter, CiInstagram } from "react-icons/ci";
 import { motion } from "framer-motion";
 
-const links = [
-  {
-    img: "/img/wink.png",
-    title: "Rectangle",
-    subtitle: ["Product design, Icon design"],
-    icon: <BsChevronRight />,
-  },
-  {
-    img: "/img/wink.png",
-    title: "Morva labs",
-    subtitle: ["Visual design, Branding"],
-  },
-  {
-    img: "/img/foot.png",
-    title: "Simply",
-    subtitle: ["Landing  page, illustration design"],
-  },
-  {
-    img: "/img/img4.png",
-    title: "Glassdoor",
-    subtitle: ["Icons design, illustration design"],
-  },
-];
+
 
 const projects = [
   {
-    img: "/img/pizza.png",
-    title: "Goven",
-    subtitle: "framer template",
+    img: "https://i.ibb.co/Ld6w3LQ/icons8-e-commerce-96.png",
+    title: "E-Commerce Functionality Website",
+    subtitle: ["ECommerce"],
     icon: <BsChevronRight />,
+    href: "/rectangle",
   },
   {
-    img: "/img/wink.png",
-    title: "Upshifts",
-    subtitle: "Web design collections",
+    img: "https://i.ibb.co/2dgSsg7/icons8-budget-96.png",
+    title: "Web Marketing Agency",
+    subtitle: ["Communication"],
+    href: "/morvalabs",
   },
   {
-    img: "/img/foot.png",
-    title: "Subtle Folio",
-    subtitle: "framer template",
+    img: "https://i.ibb.co/hVK9hHq/icons8-paid-96.png",
+    title: "Landing Business Website",
+    subtitle: ["Business"],
+    // u can redirect to other sites here
+    href: "/simply",
   },
 ];
 
@@ -108,7 +90,7 @@ function page() {
                     </div>
 
                     <div className="flex max-md:mt-4 w-fit items-center gap-x-3">
-                      <p className="text-sm font-semibold uppercase text-neutral-40 bg-[#EDEFF3] dark:bg-neutral-600/50 dark:text-neutral-400 text-[#666D80]  px-2 rounded-lg ">
+                      <p className="text-[12px] font-semibold uppercase text-neutral-40 bg-[#EDEFF3] dark:bg-neutral-600/50 dark:text-neutral-400 text-[#666D80]  px-2 rounded-lg ">
                         {link.subtitle}
                       </p>
                       <div className="">
@@ -178,12 +160,12 @@ function page() {
           <div className="bg-[#F6F8FA] dark:bg-[#2C2C2C] p-6  mt-4 rounded-md">
             <div className="text-center">
               <span className="text-neutral-700 dark:text-neutral-400">
-                © 2023 Joscript Folio – Jo free Templates
+                © 2024 Muhammad Masud || All Rights Reserved.
               </span>
               <p className="text-neutral-500">
                 By{" "}
                 <span className="hover:underline  hover:text-neutral-400 text-neutral-700 dark:text-neutral-300">
-                  Joscript
+                  MasudCodeCreations
                 </span>
               </p>
             </div>

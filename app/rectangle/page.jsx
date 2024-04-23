@@ -8,21 +8,21 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const links = [
   {
-    img: "/img/img1.png",
-    title: "Rectangle",
-    subtitle: ["Product design, Icon design"],
+    img: "https://i.ibb.co/Ld6w3LQ/icons8-e-commerce-96.png",
+    title: "E-Commerce Functionality Website",
+    subtitle: ["Product design, Feature of functionality"],
     icon: <BsChevronRight />,
     href: "/rectangle",
   },
   {
-    img: "/img/wink.png",
-    title: "Morva labs",
-    subtitle: ["Visual design, Branding"],
+    img: "https://i.ibb.co/2dgSsg7/icons8-budget-96.png",
+    title: "Web Marketing Agency",
+    subtitle: ["Run Time Communication, ChatBox"],
     href: "/morvalabs",
   },
   {
-    img: "/img/foot.png",
-    title: "Simply",
+    img: "https://i.ibb.co/hVK9hHq/icons8-paid-96.png",
+    title: "Landing Business Website",
     subtitle: ["Landing  page, illustration design"],
     // u can redirect to other sites here
     href: "/simply",
@@ -41,10 +41,10 @@ function page() {
             <p>Year</p>
           </div>
           <div>
-            <p>Goven</p>
+            <p>Jony Islam</p>
             <p>Rectangle</p>
-            <p>Production design, Icon Design</p>
-            <p>2023</p>
+            <p>E-Commerce</p>
+            <p>2024</p>
           </div>
         </div>
 
@@ -52,7 +52,7 @@ function page() {
           <div className="drop-shadow-md  mt-8">
             <img
               className="w-12 h-12 object-cover rounded-full "
-              src="/img/img1.png"
+              src="https://i.ibb.co/Ld6w3LQ/icons8-e-commerce-96.png"
               alt=""
             />
           </div>
@@ -67,15 +67,20 @@ function page() {
 
             <div className="border-neutral-300 mt-5 dark:border-neutral-700 bg-white dark:bg-[#373737] shadow-md border  w-fit h-8 px-2 rounded-md max-sm:flex-col flex items-center gap-x-1 ">
               <button className="text-neutral-700 dark:text-white  text-sm font-semibold">
-                View All
+                <a
+                  href="https://anon-ecommerce-design.netlify.app/"
+                  target="_blank"
+                >
+                  View All
+                </a>
               </button>
               <FiArrowRight className="text-neutral-500" />
             </div>
 
             <div className="mt-8">
               <img
-                className="aspect-square rounded-lg"
-                src="/img/img3.png"
+                className="aspect-square rounded-lg object-cover"
+                src="https://i.ibb.co/VCDRQ0x/I-Will-Be-Your-Front-End-Web-Developer-for-HTML-CSS-React-js-and-Next-js-Development-2.jpg"
                 alt=""
               />
               <p className="my-5 text-lg dark:text-neutral-300  text-neutral-900">
@@ -87,8 +92,8 @@ function page() {
               </p>
 
               <img
-                className="aspect-square rounded-lg"
-                src="/img/img5.png"
+                className="aspect-square rounded-lg object-cover"
+                src="https://i.ibb.co/syJG3CH/I-Will-Be-Your-Front-End-Web-Developer-for-HTML-CSS-React-js-and-Next-js-Development.jpg"
                 alt=""
               />
 
@@ -240,12 +245,12 @@ function page() {
           <div className="bg-[#F6F8FA] dark:bg-[#2C2C2C] p-6  mt-4 rounded-md">
             <div className="text-center">
               <span className="text-neutral-700 dark:text-neutral-400">
-                © 2023 Joscript Folio – Framer Template
+                © 2024 Muhammad Masud || All Rights Reserved.
               </span>
               <p className="text-neutral-500">
                 By{" "}
                 <span className="hover:underline  hover:text-neutral-400 text-neutral-700 dark:text-neutral-300">
-                  Joscript
+                  MasudCodeCreations
                 </span>
               </p>
             </div>

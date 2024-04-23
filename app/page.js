@@ -7,6 +7,7 @@ import { CiLocationArrow1, CiTwitter, CiInstagram } from "react-icons/ci";
 import { BsChevronRight } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Swal from "sweetalert2";
 
 const links = [
   {
@@ -50,12 +51,18 @@ const projects = [
   },
 ];
 
-const email = "mdmasudrana0783@gmail.com"; 
+const email = "mdmasudrana0783@gmail.com";
 const handleCopyEmail = async () => {
   if ("clipboard" in navigator) {
     try {
       await navigator.clipboard.writeText(email);
-      alert("Email address copied to clipboard!");
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Email address copied",
+        showConfirmButton: false,
+        timer: 1000,
+      });
     } catch (err) {
       console.error("Failed to copy: ", err);
       alert("Failed to copy, please try again!");
@@ -274,7 +281,7 @@ export default function Home() {
                 <div className="border-neutral-300 shadow-md border dark:border-neutral-700  w-fit h-8 px-2 rounded-md flex items-center gap-x-2 ">
                   <FiCopy className="" />
                   <span className="text-neutral-700  dark:text-white font-semibold">
-                    Copy Email
+                    <button onClick={handleCopyEmail}>Copy Email </button>
                   </span>
                 </div>
               </div>
@@ -310,12 +317,12 @@ export default function Home() {
           <div className="bg-[#F6F8FA] dark:bg-[#2C2C2C] p-6  mt-4 rounded-md">
             <div className="text-center">
               <span className="text-neutral-700 dark:text-neutral-400">
-                © 2024 Muhammad Masud || New Update
+                © 2024 Muhammad Masud || All Rights Reserved.
               </span>
               <p className="text-neutral-500">
                 By{" "}
                 <span className="hover:underline  hover:text-neutral-400 text-neutral-700 dark:text-neutral-300">
-                  Joscript
+                  MasudCodeCreations
                 </span>
               </p>
             </div>

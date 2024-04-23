@@ -8,25 +8,52 @@ import { CiLocationArrow1, CiTwitter, CiInstagram } from "react-icons/ci";
 import { BsChevronRight } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Swal from "sweetalert2";
 
 const projects = [
   {
-    img: "/img/pizza.png",
-    title: "Goven",
-    subtitle: "framer template",
+    img: "https://i.ibb.co/Ld6w3LQ/icons8-e-commerce-96.png",
+    title: "E-Commerce Functionality Website",
+    subtitle: ["Product design, Feature of functionality"],
     icon: <BsChevronRight />,
+    href: "/rectangle",
   },
   {
-    img: "/img/wink.png",
-    title: "Upshifts",
-    subtitle: "Web design collections",
+    img: "https://i.ibb.co/2dgSsg7/icons8-budget-96.png",
+    title: "Web Marketing Agency",
+    subtitle: ["Run Time Communication, ChatBox"],
+    href: "/morvalabs",
   },
   {
-    img: "/img/foot.png",
-    title: "Subtle Folio",
-    subtitle: "framer template",
+    img: "https://i.ibb.co/hVK9hHq/icons8-paid-96.png",
+    title: "Landing Business Website",
+    subtitle: ["Landing  page, illustration design"],
+    // u can redirect to other sites here
+    href: "/simply",
   },
 ];
+
+const email = "mdmasudrana0783@gmail.com";
+const handleCopyEmail = async () => {
+  if ("clipboard" in navigator) {
+    try {
+      await navigator.clipboard.writeText(email);
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Email address copied",
+        showConfirmButton: false,
+        timer: 1000,
+      });
+    } catch (err) {
+      console.error("Failed to copy: ", err);
+      alert("Failed to copy, please try again!");
+    }
+  } else {
+    // Clipboard API not available
+    alert("Clipboard not available, please manually copy the email: " + email);
+  }
+};
 
 function page() {
   return (
@@ -104,16 +131,15 @@ function page() {
             }}
             className="text-neutral-700 text-lg my-7 leading-8 font-InterRe dark:text-[#C0C0C0]"
           >
-            I am a proud graduate of
-            Thakurgaon Polytechnic Institute, where I earned my degree in
-            Computer Science and Technology. I am passionate about front-end
-            development and have successfully launched several projects that are
-            still live and operational today. These projects showcase my skill
-            in creating dynamic and responsive websites, highlighting my
-            proficiency in modern web technologies and my dedication to
-            practical, user-centered design. I am continuously seeking
-            opportunities to grow my skills and contribute to exciting new
-            projects.
+            I am a proud graduate of Thakurgaon Polytechnic Institute, where I
+            earned my degree in Computer Science and Technology. I am passionate
+            about front-end development and have successfully launched several
+            projects that are still live and operational today. These projects
+            showcase my skill in creating dynamic and responsive websites,
+            highlighting my proficiency in modern web technologies and my
+            dedication to practical, user-centered design. I am continuously
+            seeking opportunities to grow my skills and contribute to exciting
+            new projects.
           </motion.p>
 
           <motion.p
@@ -213,7 +239,7 @@ function page() {
                 <div className="border-neutral-300 dark:border-neutral-700 shadow-md border  w-fit h-8 px-2 rounded-md flex items-center gap-x-2 ">
                   <FiCopy className="" />
                   <span className="text-neutral-700  dark:text-white font-semibold">
-                    Copy Email
+                    <button onClick={handleCopyEmail}>Copy Email </button>
                   </span>
                 </div>
               </div>
@@ -249,12 +275,12 @@ function page() {
           <div className="bg-[#F6F8FA] dark:bg-[#2C2C2C] p-6  mt-4 rounded-md">
             <div className="text-center">
               <span className="text-neutral-700 dark:text-neutral-400">
-                © 2023 Joscript Folio – Jo free Templates
+                © 2024 Muhammad Masud || All Rights Reserved.
               </span>
               <p className="text-neutral-500">
                 By{" "}
                 <span className="hover:underline  hover:text-neutral-400 text-neutral-700 dark:text-neutral-300">
-                  Joscript
+                  MasudCodeCreations
                 </span>
               </p>
             </div>
