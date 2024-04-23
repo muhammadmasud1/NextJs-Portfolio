@@ -8,7 +8,7 @@ import { CiLocationArrow1, CiTwitter, CiInstagram } from "react-icons/ci";
 import { BsChevronRight } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Swal from "sweetalert2";
+
 
 const projects = [
   {
@@ -37,14 +37,7 @@ const email = "mdmasudrana0783@gmail.com";
 const handleCopyEmail = async () => {
   if ("clipboard" in navigator) {
     try {
-      await navigator.clipboard.writeText(email);
-      Swal.fire({
-        position: "center",
-        icon: "success",
-        title: "Email address copied",
-        showConfirmButton: false,
-        timer: 1000,
-      });
+      await navigator.clipboard.writeText(email)
     } catch (err) {
       console.error("Failed to copy: ", err);
       alert("Failed to copy, please try again!");
