@@ -120,8 +120,8 @@ export default function Home() {
                   }}
                   className="  text-lg max-md:text-center  my-3 text-neutral-500 dark:text-neutral-300"
                 >
-                  "Front End Web Developer <br /> from Bangladesh,crafting
-                  responsive, user-friendly websites."
+                  Front End Web Developer <br /> from Bangladesh,crafting
+                  responsive, user-friendly websites
                 </motion.p>
 
                 <div className="flex items-center gap-x-2 mt-6 ">
@@ -147,7 +147,7 @@ export default function Home() {
                     transition: { duration: 0.4, delay: 0.5 },
                   }}
                   className="w-32 h-32 flex object-cover   rounded-full "
-                  src="https://i.ibb.co/sR7yQ4m/IMG-1713618962287.jpg"
+                  src="https://i.ibb.co/z5pG5vq/1000030515-transformed-jpeg.jpg"
                   alt=""
                 />
               </div>
