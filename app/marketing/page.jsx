@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import React from "react";
 import { FiArrowRight, FiCopy } from "react-icons/fi";
@@ -29,7 +30,7 @@ const links = [
   },
 ];
 
-function page() {
+function marketing() {
   return (
     <div className="bg-white top-24 relative dark:bg-[#212121] shadow-md rounded-xl max-w-xl lg:mx-auto mx-4 lg:max-w-xl max-2xl md:mx-auto sm:mx-auto lg:px-0 ">
       <div className=" lg:p-6 p-2 max-md:p-5 ">
@@ -42,8 +43,8 @@ function page() {
           </div>
           <div>
             <p>Jony Islam</p>
-            <p>Rectangle</p>
-            <p>E-Commerce</p>
+            <p>Creative it</p>
+            <p>Web Application Marketing</p>
             <p>2024</p>
           </div>
         </div>
@@ -52,13 +53,15 @@ function page() {
           <div className="drop-shadow-md  mt-8">
             <img
               className="w-12 h-12 object-cover rounded-full "
-              src="https://i.ibb.co/Ld6w3LQ/icons8-e-commerce-96.png"
+              src="https://i.ibb.co/S0RZqYK/Screenshot-259.png"
               alt=""
             />
           </div>
 
           <div>
-            <h1 className="text-4xl font-InterBo my-5">Rectangle</h1>
+            <h1 className="text-2xl font-InterBo my-5">
+              Web Application Marketing
+            </h1>
             <p className="text-lg dark:text-neutral-300  text-neutral-900">
               An innovative platform that empowers businesses to efficiently
               manage their workforce, delivering a seamless user experience
@@ -67,12 +70,7 @@ function page() {
 
             <div className="border-neutral-300 mt-5 dark:border-neutral-700 bg-white dark:bg-[#373737] shadow-md border  w-fit h-8 px-2 rounded-md max-sm:flex-col flex items-center gap-x-1 ">
               <button className="text-neutral-700 dark:text-white  text-sm font-semibold">
-                <a
-                  href="https://anon-ecommerce-design.netlify.app/"
-                  target="_blank"
-                >
-                  View All
-                </a>
+                View All
               </button>
               <FiArrowRight className="text-neutral-500" />
             </div>
@@ -80,7 +78,7 @@ function page() {
             <div className="mt-8">
               <img
                 className="aspect-square rounded-lg object-cover"
-                src="https://i.ibb.co/VCDRQ0x/I-Will-Be-Your-Front-End-Web-Developer-for-HTML-CSS-React-js-and-Next-js-Development-2.jpg"
+                src="https://i.ibb.co/S0RZqYK/Screenshot-259.png"
                 alt=""
               />
               <p className="my-5 text-lg dark:text-neutral-300  text-neutral-900">
@@ -90,13 +88,20 @@ function page() {
                 priority was to set them apart from competitors and attract new
                 customers.
               </p>
-             
+
               <img
                 className="aspect-square rounded-lg object-cover"
-                src="https://i.ibb.co/syJG3CH/I-Will-Be-Your-Front-End-Web-Developer-for-HTML-CSS-React-js-and-Next-js-Development.jpg"
+                src="https://i.ibb.co/xHgKFGQ/Screenshot-260.png"
                 alt=""
               />
-
+              <div className="text-center">
+                <a
+                  href="https://elementorconcepts.netlify.app/"
+                  target="_blank"
+                >
+                  <button className="text-xl">Live Demo</button>
+                </a>
+              </div>
               <h3 className="text-lg my-6 font-InterBo">
                 The Problems to Solve
               </h3>
@@ -111,11 +116,13 @@ function page() {
                 distinguishing Rectangle amidst its competition.
               </p>
 
-              <img
-                className="aspect-square rounded-lg my-7"
-                src="/img/img6.png"
-                alt=""
-              />
+              <div className="text-center mx-auto">
+                <img
+                  className="aspect-square rounded-lg my-7 object-cover "
+                  src="https://i.ibb.co/MDW2xy7/Screenshot-262.png"
+                  alt=""
+                />
+              </div>
 
               <h3 className="text-lg my-6 font-InterBo">Our Solution</h3>
               <p className="text-lg dark:text-neutral-300  text-neutral-900">
@@ -261,4 +268,4 @@ function page() {
   );
 }
 
-export default page;
+export default marketing;

@@ -23,7 +23,7 @@ const links = [
     img: "https://i.ibb.co/2dgSsg7/icons8-budget-96.png",
     title: "Web Marketing Agency",
     subtitle: ["Run Time Communication, ChatBox"],
-    href: "/morvalabs",
+    href: "/marketing",
   },
   {
     img: "https://i.ibb.co/hVK9hHq/icons8-paid-96.png",

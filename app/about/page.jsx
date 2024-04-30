@@ -14,20 +14,20 @@ const projects = [
   {
     img: "https://i.ibb.co/Ld6w3LQ/icons8-e-commerce-96.png",
     title: "E-Commerce Functionality Website",
-    subtitle: ["Product design, Feature of functionality"],
+    subtitle: ["ECommerce"],
     icon: <BsChevronRight />,
     href: "/rectangle",
   },
   {
     img: "https://i.ibb.co/2dgSsg7/icons8-budget-96.png",
     title: "Web Marketing Agency",
-    subtitle: ["Run Time Communication, ChatBox"],
-    href: "/morvalabs",
+    subtitle: ["Communication"],
+    href: "/marketing",
   },
   {
     img: "https://i.ibb.co/hVK9hHq/icons8-paid-96.png",
     title: "Landing Business Website",
-    subtitle: ["Landing  page, illustration design"],
+    subtitle: ["Landing  page"],
     // u can redirect to other sites here
     href: "/simply",
   },
@@ -97,7 +97,7 @@ function page() {
               transition: { duration: 0.4, delay: 0.3 },
             }}
             className="aspect-square object-cover rounded-lg"
-            src="https://i.ibb.co/sR7yQ4m/IMG-1713618962287.jpg"
+            src="https://i.ibb.co/Drv7zNj/1000030515-transformed-jpeg.jpg"
             alt=""
           />
         </div>
